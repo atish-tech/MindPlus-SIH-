@@ -1,0 +1,10 @@
+.exercise-component{
+    margin-top: 130px;
+}
+
+/* Phone Viewport */
+@media screen and (max-width : 700px) { 
+    .exercise-component{
+        margin-top: 110px;
+    }
+}

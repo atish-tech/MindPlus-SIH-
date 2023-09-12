@@ -1,0 +1,37 @@
+/* yogaStyle.css */
+.yoga-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img-name>h2{
+    margin-top: 10px;
+  }
+  .yoga-exercise {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 100%; /* Set the width to 100% to stack exercises vertically */
+    display: flex;
+    flex-direction: row; /* Change flex-direction to row */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .yoga-exercise img {
+    max-width: 100%;
+    max-height: 150px; /* Limit the image height */
+  }
+  
+
+  .description {
+    flex: 1; /* Allow the description to take up remaining space on the right */
+    margin-left: 10px; /* Add some space between image and description */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .benefitbtn>h2{
+    padding: 30px;
+  }
+  

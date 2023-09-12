@@ -1,13 +1,12 @@
 import React from 'react'
-import { Navigation } from '../Navigation/Navigation'
+import YogaApp from './Yoga/YogaApp'
+import "./Exercise.css"
 
 const ExerciseApp = () => {
   return (
     <>
-      <div>
-        {/* <Navigation /> */}
-    <div>ExerciseApp</div>
-
+      <div className='exercise-component'>
+        <YogaApp />
       </div>
     </>
     )
