@@ -9,8 +9,8 @@ export const DesktopNavigation = () => {
     const navigater = useNavigate();
   return (
     <div className='navigation-component'>
-        <div onClick={() => {navigater('/')}} className='logo'>
-            <img src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
+        <div  onClick={() => {navigater('/')}} className='logo'>
+            <img width={100} src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
         </div>
         <div className='navigation-content'>
 

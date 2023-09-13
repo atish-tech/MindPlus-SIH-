@@ -1,17 +1,18 @@
 .clouser-item{
     /* min-height: 50vh; */
     /* min-width: 50wh; */
-    background-color: #93B5B3;
+    background-color: #acc6c4;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
     border-radius: 30px;
     padding: 100px 30px;
-
-
 }
 
+.quot-text{
+    font-size: 50px;
+}
 
 .home-component {
     margin-top: 135px;
@@ -71,6 +72,9 @@
 
  /* Phone view port */
 @media screen and (max-width : 700px) {
+    .quot-text{
+        font-size: large;
+    }
     .clouser-item {
         padding: 30px;
     }

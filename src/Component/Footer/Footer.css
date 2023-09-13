@@ -6,7 +6,8 @@
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 50px;
 
 }
 
@@ -21,15 +22,15 @@
     }
   }
 .footer-logo{
-
+    flex: 0.4;
 }
 
 .footer-page{
-
+    flex: 0.3;
 }
 
 .footer-privacy{
-
+    flex: 0.3;
 }
 
 

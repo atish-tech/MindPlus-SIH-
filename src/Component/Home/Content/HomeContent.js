@@ -11,7 +11,7 @@ const HomeContent = () => {
             {/* How introduction */}
             <div className='home-introduction'>
                 <div className='home-introduction-text'>
-                <h3 className='text-content'>About mental health:</h3>
+                    <h3 className='text-content'>About mental health:</h3>
 
                     <p className='text-content'>Mental health determines how you think, feel and act. Good mental health is when you feel positive about yourself and cope well with the everyday pressures.
                         Mental health allows people to use their abilities, be productive, make decisions, and play an active role in their communities.</p>
@@ -22,9 +22,13 @@ const HomeContent = () => {
 
             </div>
 
+           
 
             {/* Features */}
-            <div style={{backgroundColor: "#E4E4D0"}} className='home-introduction'>
+            <div style={{ backgroundColor: "#E4E4D0" }} className='home-introduction'>
+                <div>
+                    <img className='home-image' width={500} src='https://i.ibb.co/GPJNm3c/3764135.jpg' />
+                </div>
                 <div className='home-features'>
                     <h1>Features</h1>
                     <div>
@@ -44,20 +48,18 @@ const HomeContent = () => {
                         <span className='font-sz' >Check Your Mental Score</span>
                     </div>
                 </div>
-                <div>
-                    <img className='home-image' width={500} src='https://i.ibb.co/GPJNm3c/3764135.jpg' />
-                </div>
+
             </div>
 
 
-            <div style={{backgroundColor: "#F4EEEE"}} className='home-introduction'>
+            <div style={{ backgroundColor: "#F4EEEE" }} className='home-introduction'>
                 <div><p className='text-content'>“Our mental health is something that impacts our eating and sleeping habits and has a lot to do with our physical health as well. It is important to address our mental health needs, or oftentimes we will feel the impact of it in other areas of our health as well.”</p></div>
-                <img style={{marginTop: "10px"}} className='home-image' width={500} src='https://i.ibb.co/4WR5c6T/7742022.jpg' />
-                
+                <img style={{ marginTop: "10px" }} className='home-image' width={500} src='https://i.ibb.co/4WR5c6T/7742022.jpg' />
+
             </div>
 
             {/* Testimonial */}
-            <div style={{backgroundColor: "#B9B4C7", marginBottom: "50px"}} className='testimonial-container'>
+            <div style={{ backgroundColor: "#B9B4C7", marginBottom: "50px" }} className='testimonial-container'>
                 <h2>Trusted By Government</h2>
                 <div>
                     <img className='testimonial-img' src='https://pbs.twimg.com/profile_images/1030286408488050688/aIzFiXmw_400x400.jpg' />

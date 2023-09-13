@@ -11,8 +11,8 @@ const Footer = () => {
 
   return (
     <div className='footer-component'>
-      <div className='footer-logo'>
-        <img onClick={() => {navigater('/')}} src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
+      <div style={{ display: "flex", flexDirection: "column" }} className='footer-logo'>
+        <img onClick={() => { navigater('/') }} src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
         <a
           style={{ color: "#091353" }}
           href="mailto:max.meantalhealth@gmail.com"
@@ -26,18 +26,22 @@ const Footer = () => {
           </IconButton>
         </a>
       </div>
+
+
       <div className='footer-page'>
         <h1>About Us</h1>
         <hr className='horizontal'></hr>
         <h1>Contact</h1>
         <hr className='horizontal'></hr>
       </div>
+
+      
       <div className='footer-privacy'>
 
         {privacy ?
-          
 
-          <div> <p>
+
+          <div style={{width: "100%"}}> <p>
             Your data is perfectly safe with us. But you need to know
             how your data is processed and what can you do with it as a
             user.</p>
@@ -62,15 +66,15 @@ const Footer = () => {
               information about the transaction itself.{" "}
             </p>
             <button onClick={() => { setPrivacy(false) }} className="cancel-btn">Cancel</button>
-         
+
             <hr className='horizontal'></hr>
           </div>
           :
-          <IconButton onClick={() => {setPrivacy(true)}}><h2>Term & Condition</h2></IconButton>
+          <IconButton onClick={() => { setPrivacy(true) }}><h2>Term & Condition</h2></IconButton>
         }
-        </div>
+      </div>
     </div>
-      )
+  )
 }
 
-      export default Footer
+export default Footer
