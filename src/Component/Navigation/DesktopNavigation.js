@@ -9,24 +9,26 @@ export const DesktopNavigation = () => {
     const navigater = useNavigate();
   return (
     <div className='navigation-component'>
-        <div onClick={() => {navigater('/')}} className='logo'>Logo......</div>
+        <div onClick={() => {navigater('/')}} className='logo'>
+            <img src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
+        </div>
         <div className='navigation-content'>
 
 
             <a className='navigation-link'>
             <IconButton onClick={() => {navigater("exercise")}} className='navigation-button'>
-                <RunCircleIcon className='white' fontSize='large' />
+                <RunCircleIcon fontSize='large' />
                 <p className='navigation-text-d'>Exercise</p>
 
             </IconButton>
             </a>
             <IconButton onClick={() => {navigater("doctor")}} className='navigation-button'>
-                <LocalHospitalIcon className='white' fontSize='large' />
+                <LocalHospitalIcon  fontSize='large' />
                 <p className='navigation-text-d'>Doctor</p>
 
             </IconButton>
             <IconButton onClick={() => {navigater('score')}} className='navigation-button'>
-                <PeopleIcon className='white' fontSize='large' />
+                <PeopleIcon  fontSize='large' />
                 <p className='navigation-text-d'>Community</p>
 
             </IconButton>

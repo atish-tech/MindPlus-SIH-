@@ -10,23 +10,23 @@ const PhoneNavigation = () => {
     return (
         <div className='navigation-component-phone'>
             <div onClick={() => {navigater('/')}} className='logo'>
-                Logo
+            <img width={80} src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
             </div>
             <div className='navigation-content'>
 
             <a className='navigation-link'>
                 <IconButton onClick={() => {navigater("exercise")}} className='navigation-button'>
-                    <RunCircleIcon className='white' />
+                    <RunCircleIcon  />
                     <p className='navigation-text'>Exercise</p>
                 </IconButton>
                 </a>
                 <IconButton onClick={() => {navigater("doctor")}} className='navigation-button' >
-                    <LocalHospitalIcon className='white' />
+                    <LocalHospitalIcon />
                     <p className='navigation-text'>Doctor</p>
 
                 </IconButton>
                 <IconButton onClick={() => {navigater('score')}} className='navigation-button' >
-                    <PeopleIcon className='white' />
+                    <PeopleIcon  />
                     <p className='navigation-text'>Community</p>
 
                 </IconButton>

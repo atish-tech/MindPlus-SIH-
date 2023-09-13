@@ -14,7 +14,7 @@
 
 
 .home-component {
-    margin-top: 130px;
+    margin-top: 135px;
 }
 
 .home-introduction{
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(190, 207, 218); */
+    background-color: #fff;
 
 }
 .home-introduction-image{
@@ -37,7 +37,7 @@
 }
 
 .text-content {
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: #72ada9;
 }
@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    background-color: #3ea0ce;
+    background-color: #e7e7df;
     
 }
 
@@ -58,6 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     background-color: #93B5B3;
     padding-top: 60px;
     padding-bottom: 70px;
@@ -74,7 +75,7 @@
         padding: 30px;
     }
     .home-component{
-        margin-top: 105px;
+        margin-top: 120px;
     }
     .home-image{
         width: 100%;

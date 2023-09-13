@@ -11,7 +11,8 @@ const HomeApp = () => {
         <div className='home-component'>
         <Clouser />
         <HomeContent />
-          <Footer />
+        
+          <Footer  />
         </div>
     </>
   )

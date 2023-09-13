@@ -14,18 +14,18 @@ const DoctorCart = ({ data }) => {
           <img className='doctor-img' src={data.imageUrl} />
         </div>
         <div style={{ width: "100%" }}>
-          <p>{data.noOfSession} Happy Session</p>
+          <p style={{color: "#053B50"}}>{data.noOfSession} Happy Session</p>
           <h2> {data.name} </h2>
-          <p><WorkspacePremiumIcon /> <span>{data.specification}</span></p>
-          <p><EventNoteIcon /> <span> {data.experience}+ Yr of experience</span></p>
-          <p><GTranslateIcon /> <span>{data.language}</span></p>
+          <p><WorkspacePremiumIcon style={{color: "#176B87"}} /> <span>{data.specification}</span></p>
+          <p><EventNoteIcon style={{color: "#176B87"}}/> <span> {data.experience}+ Yr of experience</span></p>
+          <p><GTranslateIcon style={{color: "#176B87"}} /> <span>{data.language}</span></p>
         </div>
       </div>
       <hr ></hr>
 
       <div className='doctor-detail-bottom'>
         <div>
-          <p>Next Slot: {data.session}</p>
+          <p style={{color: "#053B50"}}>Next Slot: {data.session}</p>
           {/* <button  className='book-now-btn'>Contact</button> */}
           <DoctorBackdrop2 key={data.contact} email={data.email} domain={data.domain} />
         </div>
