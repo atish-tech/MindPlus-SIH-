@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className='footer-component'>
       <div style={{ display: "flex", flexDirection: "column" }} className='footer-logo'>
-        <img onClick={() => { navigater('/') }} src='https://i.ibb.co/ZKn8LQZ/Screenshot-2023-09-13-122847-removebg-preview.png' />
+        <img style={{borderRadius: "30px"}} width={200} onClick={() => { navigater('home') }} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
         <a
           style={{ color: "#091353" }}
           href="mailto:max.meantalhealth@gmail.com"

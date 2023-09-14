@@ -22,13 +22,11 @@ const HomeContent = () => {
 
             </div>
 
-           
+
 
             {/* Features */}
             <div style={{ backgroundColor: "#E4E4D0" }} className='home-introduction'>
-                <div>
-                    <img className='home-image' width={500} src='https://i.ibb.co/GPJNm3c/3764135.jpg' />
-                </div>
+
                 <div className='home-features'>
                     <h1>Features</h1>
                     <div>
@@ -47,8 +45,12 @@ const HomeContent = () => {
                         <PsychologyAltIcon fontSize='large' className='font-sz' />
                         <span className='font-sz' >Check Your Mental Score</span>
                     </div>
+
                 </div>
 
+                <div>
+                    <img className='home-image' width={500} src='https://i.ibb.co/GPJNm3c/3764135.jpg' />
+                </div>
             </div>
 
 

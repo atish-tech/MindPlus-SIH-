@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Doctor.css"
-import Footer from "../Footer/Footer"
+// import Footer from "../Footer/Footer"
 import DoctorCart from './DoctorCart'
 
 const DoctorApp = () => {
@@ -217,7 +217,7 @@ const DoctorApp = () => {
     {doctorData.map((d) => {
       return(<DoctorCart key={d.contact} data={d} /> )
     })}
-    <Footer />
+    {/* <Footer /> */}
     </div>
     </>
   )

@@ -14,7 +14,7 @@
     /* border-bottom-right-radius: 30px; */
     border-radius: 30px;
     margin: 5px 10px 10px 15px;
-    width: 95vw;
+    width: 98vw;
 
 }
 .navigation-component-phone{
@@ -33,7 +33,7 @@
     /* border-bottom-right-radius: 30px; */
     border-radius: 30px;
     margin: 5px 10px 10px 10px;
-    width: 90%;
+    width: 95vw;
 }
 .navigation-text{
     font-size: 10px;
@@ -47,7 +47,8 @@
 .logo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    padding: 1rem;
+    padding: 1rem; 
+    cursor: pointer;
 }
 
 /* to shift anvigation down

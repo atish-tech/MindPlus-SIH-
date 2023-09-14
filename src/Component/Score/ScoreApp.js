@@ -1,14 +1,16 @@
 import React from 'react'
 import { Navigation } from '../Navigation/Navigation'
+import Score from './Score'
+// import Footer from '../Footer/Footer'
 
 
 const ScoreApp = () => {
 
   return (
-    <div >
-      {/* <Navigation /> */}
-      <h1>score Checker</h1>
-    </div>
+    <>
+      <Score />
+      {/* <Footer /> */}
+    </>
   )
 }
 

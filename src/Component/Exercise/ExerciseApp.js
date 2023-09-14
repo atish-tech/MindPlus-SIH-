@@ -1,7 +1,7 @@
 import React from 'react'
 import YogaApp from './Yoga/YogaApp'
 import "./Exercise.css"
-import Footer from "../Footer/Footer"
+// import Footer from "../Footer/Footer"
 
 const ExerciseApp = () => {
   return (
@@ -10,7 +10,7 @@ const ExerciseApp = () => {
         <YogaApp />
 
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
     )
 }

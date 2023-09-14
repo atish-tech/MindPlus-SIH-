@@ -24,13 +24,15 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    gap: 30px;
 
 }
 .home-introduction-image{
-
+    flex: 0.5;
 }
 .home-introduction-text{
     margin: 20px;
+    flex: 0.5;
 }
 .home-image{
     border-radius: 40px;
@@ -49,7 +51,7 @@
     justify-content: center;
     padding: 20px;
     background-color: #e7e7df;
-    
+    border-radius: 30px;
 }
 
 .font-sz {
