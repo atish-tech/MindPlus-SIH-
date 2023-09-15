@@ -245,19 +245,19 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   
+   padding-right: 10px;
 }
 .login-input-container {
    flex: 0.7;
-   padding: 20px;
-   background-color: aliceblue;
+   /* padding: 20px; */
    border-radius: 20px;
-   margin: 15px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 10px;
+   color: #fff;
+   margin: 20px;
 }
 .login-input-item {
    display: flex;
@@ -265,8 +265,6 @@
    justify-content: center;
    align-items: center;
    gap: 20px;
-   border: solid 1px black;
-   padding: 90px;
    border-radius: 20px;
 
 }

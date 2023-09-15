@@ -19,7 +19,12 @@ const Login = () => {
     // login
     const loginHandler = async () => {
         // navigater("home");
-        setLoader(true)
+        if(data.email.length < 1 || data.password < 1){
+            notify("Input field is empty");
+            return;
+        }
+        setLoader(true);
+
         const temp = {
             name: data.name,
             password: data.password
@@ -45,7 +50,13 @@ const Login = () => {
     }
     // register 
     const registerHandler = async () => {
-        setLoader(true)
+
+        if(data.name.length < 1 || data.email.length < 1 || data.password < 1){
+            notify("Input field is empty");
+            return;
+        }
+        setLoader(true);
+
         try {
             const config = {
                 headers: {
@@ -74,18 +85,18 @@ const Login = () => {
             <div className='login-con-main'>
                 { // Sign Up
                     seeLogin && (
-                        <div className='login-container'>
+                        <div style={{backgroundColor: "#0F2C59"}} className='login-container shadow-blue-gray-800 px-4'>
                             <div className='login-image'>
                                 <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
                             </div>
-                            <div className='login-input-container'>
+                            <div style={{backgroundColor: "#213555"}} className='login-input-container '>
                                 <div className='login-input-item'>
                                     <div>
-                                        <h1 style={{ color: "green" }}>Create your Account</h1>
+                                        <h1 className='text-blue-gray-500' >Create your Account</h1>
                                     </div>
-                                    <TextField name='name' onChange={onChangeHandler} value={data.name} size='large' id="standard-basic" label="User Id" variant="outlined" />
-                                    <TextField name='email' onChange={onChangeHandler} value={data.email} size='large' id="standard-basic" label="Email" variant="outlined" />
-                                    <TextField name='password' onChange={onChangeHandler} value={data.password} size='large' id="standard-basic" type='password' label="Password" variant="outlined" />
+                                    <TextField style={{backgroundColor: "#053B50"}} className='' name='name' onChange={onChangeHandler} value={data.name} size='large' id="standard-basic" label="User Id" variant="outlined" />
+                                    <TextField style={{backgroundColor: "#053B50"}} className='' name='email' onChange={onChangeHandler} value={data.email} size='large' id="standard-basic" label="Email" variant="outlined" />
+                                    <TextField style={{backgroundColor: "#053B50"}} className='' name='password' onChange={onChangeHandler} value={data.password} size='large' id="standard-basic" type='password' label="Password" variant="outlined" />
                                     <Button onClick={registerHandler} style={{ color: "green" }} size='large' variant="outlined">Sign Up</Button>
                                     {
                                         loader &&
@@ -104,14 +115,14 @@ const Login = () => {
 
                 { // Login
                     !seeLogin && (
-                        <div className='login-container'>
+                        <div style={{backgroundColor: "#0F2C59"}} className='login-container shadow-blue-gray-800 px-4'>
                             <div className='login-image'>
                                 <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
                             </div>
-                            <div className='login-input-container'>
+                            <div style={{backgroundColor: "#213555"}} className='login-input-container '>
                                 <div className='login-input-item'>
                                     <div>
-                                        <h1 style={{ color: "green" }}>Login To your Account</h1>
+                                        <h1 className='text-blue-gray-500'>Login To your Account</h1>
                                     </div>
                                     <TextField name='name' onChange={onChangeHandler} size='large' id="standard-basic" label="User Id" variant="outlined" />
                                     <TextField name='password' onChange={onChangeHandler} size='large' id="standard-basic" type='password' label="Password" variant="outlined" />
@@ -125,6 +136,7 @@ const Login = () => {
                                     </Box>
                                     }
                                     <h3 style={{ color: "black" }} >First Time <span onClick={() => setSeeLogin(!seeLogin)} className='register-btn'>User</span></h3>
+                                    <ToastContainer />
                                 </div>
                             </div>
                         </div>
