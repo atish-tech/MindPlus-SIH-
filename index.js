@@ -24,9 +24,9 @@ connectDb();
 
 
 app.use('/user' , userRoute);
-// app.get('/' , (request , response) => {
-//     response.send("API is running");
-// });
+app.get('/' , (request , response) => {
+    response.send("API is running");
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT , console.log('server is running'));
