@@ -27,6 +27,9 @@ app.use('/user' , userRoute);
 app.get('/' , (request , response) => {
     response.send("API is running");
 });
+app.get('/home' , (request , response) => {
+    response.send("this is home page");
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT , console.log('server is running'));
