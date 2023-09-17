@@ -1,10 +1,52 @@
-.exercise-component{
-    margin-top: 130px;
+.exercise-component {
+    /* margin-top: 100px; */
 }
 
+.exercise-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.exercise-category {
+    background-color: rgb(171, 150, 190);
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.pose-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(185, 167, 201);
+    border-radius: 30px;
+}
+
+.pose-img-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
 /* Phone Viewport */
-@media screen and (max-width : 700px) { 
-    .exercise-component{
-        margin-top: 110px;
+@media screen and (max-width : 700px) {
+    .exercise-component {
+        margin-top: 70px;
+    }
+
+    .yoga-img {
+        width: 50%;
+    }
+    .exercise-container {
+        padding: 8px;
+    }
+    .pose-container{
+        margin: 5px;
+        margin-top: 20px;
     }
 }
