@@ -1,6 +1,6 @@
 
 .navigation-component{
-    background-color: #B9B4C7;
+    background-color: #156788;
     color: aliceblue;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@
 
 }
 .navigation-component-phone{
-    background-color: #B9B4C7;
+    background-color: #156788;
     color: black;
     display: flex;
     justify-content: space-between;

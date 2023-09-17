@@ -12,7 +12,7 @@ export default function DoctorBackdrop({contact}) {
 
   return (
     <div>
-      <button className='book-now-btn' onClick={handleOpen}>Book Your sloat</button>
+      <button style={{backgroundColor : "#156788"}} className='book-now-btn bg-blue-800' onClick={handleOpen}>Book Now</button>
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}

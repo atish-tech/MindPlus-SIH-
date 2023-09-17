@@ -9,26 +9,26 @@ import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 const PhoneNavigation = () => {
     const navigater = useNavigate();
     return (
-        <div className='navigation-component-phone'>
+        <div style={{paddingRight: "20px"}} className='navigation-component-phone'>
             <div onClick={() => {navigater('home')}} className='logo'>
-            <img style={{borderRadius: "30px"}} width={80} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
+            <img style={{borderRadius: "30px"}} width={80} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
             </div>
             <div className='navigation-content'>
 
             <a className='navigation-link'>
                 <IconButton onClick={() => {navigater("exercise")}} className='navigation-button'>
-                    <RunCircleIcon  />
-                    <p className='navigation-text'>Exercise</p>
+                    <RunCircleIcon className='text-gray-400' />
+                    <p className='navigation-text text-gray-400'>Exercise</p>
                 </IconButton>
                 </a>
                 <IconButton onClick={() => {navigater("doctor")}} className='navigation-button' >
-                    <LocalHospitalIcon />
-                    <p className='navigation-text'>Doctor</p>
+                    <LocalHospitalIcon className='text-gray-400' />
+                    <p className='navigation-text text-gray-400'>Doctor</p>
 
                 </IconButton>
                 <IconButton onClick={() => {navigater('score')}} className='navigation-button' >
-                    <PsychologyAltIcon  />
-                    <p className='navigation-text'>Mental Score</p>
+                    <PsychologyAltIcon className='text-gray-400'  />
+                    <p className='navigation-text text-gray-400'> Score</p>
 
                 </IconButton>
 

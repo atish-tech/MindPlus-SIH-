@@ -14,14 +14,14 @@ export default function MentalScore({score}) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Subbmit </Button>
+      <Button onClick={handleOpen}>Submit </Button>
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
         onClick={handleClose}
       >
         <div>
-            <h1>Your Mental Score is {score}</h1>
+            <h1>Your Mental Score is {score}/40</h1>
         </div>
       </Backdrop>
     </div>

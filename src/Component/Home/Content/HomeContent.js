@@ -25,10 +25,10 @@ const HomeContent = () => {
 
 
             {/* Features */}
-            <div style={{ backgroundColor: "#E4E4D0" }} className='home-introduction'>
+            <div style={{ backgroundColor: "#E4E4D0" }} className='home-introduction '>
 
                 <div className='home-features'>
-                    <h1>Features</h1>
+                    <h1 style={{fontSize: "40px"}}>Features</h1>
                     <div>
                         <SportsMartialArtsIcon fontSize='large' className='font-sz' />
                         <span className='font-sz' >Exercise</span>

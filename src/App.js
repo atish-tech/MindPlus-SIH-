@@ -7,6 +7,7 @@ import ScoreApp from "./Component/Score/ScoreApp";
 import { Navigation } from "./Component/Navigation/Navigation";
 import Footer from "./Component/Footer/Footer";
 import Login from "./Component/Login/Login";
+import { ProtectedRoute } from "./Component/Protected Route/ProtectedRoute";
 
 function App() {
   
@@ -17,9 +18,9 @@ function App() {
         <Routes>
         <Route path="/" element={<Login />} />
           <Route path="home" element={<HomeApp />} />
-          <Route path="exercise" element={<ExerciseApp /> } />
-          <Route path="doctor" element={<DoctorApp />}  />
-          <Route path="score" element={<ScoreApp />} />
+          <Route path="exercise" element={<ProtectedRoute Component={ExerciseApp} /> } />
+          <Route path="doctor" element={<ProtectedRoute Component={DoctorApp} />}  />
+          <Route path="score" element={<ProtectedRoute Component={ScoreApp} />} />
         </Routes>
           <Footer />
         </div>

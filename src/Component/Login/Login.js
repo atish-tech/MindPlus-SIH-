@@ -1,5 +1,5 @@
-import { Box, Button, CircularProgress, TextField } from '@mui/material'
-import React, { useState } from 'react'
+import { Alert, Box, Button, CircularProgress, TextField } from '@mui/material'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./Login.css"
 import { Circles } from 'react-loader-spinner';
 
-const Login = () => {
+const Login = ({ notification }) => {
     const notify = (p) => toast(p);
     const navigater = useNavigate()
     const [seeLogin, setSeeLogin] = useState(true);
@@ -16,6 +16,11 @@ const Login = () => {
     const onChangeHandler = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
     }
+    const alert = localStorage.getItem('notification');
+    useEffect(() => {
+        notify("You need login to access the page");
+        notify("only you can access Home pege without login")
+    }, [alert])
 
     // login
     const loginHandler = async () => {
@@ -40,6 +45,7 @@ const Login = () => {
             const response = await axios.post("https://mind-plus-sih-git-backend-atish-tech.vercel.app/user/login",
                 temp, config);
             localStorage.setItem("userData", JSON.stringify(response));
+            localStorage.setItem("login", true);
             console.log((localStorage.getItem("userData")));
             navigater("home");
         }
@@ -70,6 +76,7 @@ const Login = () => {
                 data, config
             );
             localStorage.setItem("userData", JSON.stringify(response));
+            localStorage.setItem("login", true);
             navigater("home");
 
         }
@@ -86,11 +93,11 @@ const Login = () => {
             <div className='login-con-main'>
                 { // Sign Up
                     seeLogin && (
-                        <div style={{ backgroundColor: "#0F2C59" }} className='login-container shadow-blue-gray-800 px-4'>
+                        <div style={{ backgroundColor: "" }} className='login-container shadow-blue-gray-800 px-4 bg-blue-gray-300'>
                             <div className='login-image'>
-                                <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
+                                <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
                             </div>
-                            <div style={{ backgroundColor: "#213555" }} className='login-input-container '>
+                            <div style={{ backgroundColor: "#fff" }} className='login-input-container '>
                                 <div className='login-input-item'>
                                     <div>
                                         <h1 className='text-blue-gray-500' >Create your Account</h1>
@@ -124,7 +131,7 @@ const Login = () => {
                     !seeLogin && (
                         <div style={{ backgroundColor: "#0F2C59" }} className='login-container shadow-blue-gray-800 px-4'>
                             <div className='login-image'>
-                                <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
+                                <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
                             </div>
                             <div style={{ backgroundColor: "#213555" }} className='login-input-container '>
                                 <div className='login-input-item'>

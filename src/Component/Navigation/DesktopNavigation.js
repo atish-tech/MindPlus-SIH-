@@ -10,7 +10,7 @@ export const DesktopNavigation = () => {
   return (
     <div className='navigation-component'>
         <div  onClick={() => {navigater('home')}} className='logo'>
-            <img style={{borderRadius: "30px"}} width={100} src='https://i.ibb.co/XV7VJ2s/Screenshot-2023-09-14-122032.png' />
+            <img style={{borderRadius: "30px"}} width={100} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
         </div>
         <div className='navigation-content'>
 
@@ -29,7 +29,7 @@ export const DesktopNavigation = () => {
             </IconButton>
             <IconButton onClick={() => {navigater('score')}} className='navigation-button'>
                 <PsychologyAltIcon  fontSize='large' />
-                <p className='navigation-text-d'>Mental Score</p>
+                <p className='navigation-text-d'> Score</p>
 
             </IconButton>
 
