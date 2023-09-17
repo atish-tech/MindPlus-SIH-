@@ -17,9 +17,10 @@ export const Exercise = () => {
 
     return (
         <>
-            <div className='exercise-container mt-44'>
+            <div className='exercise-container mt-20'>
                 {
                     loading &&
+                    <div className='loading-con'>
                     <Circles
                         height="80"
                         width="80"
@@ -29,6 +30,7 @@ export const Exercise = () => {
                         wrapperClass=""
                         visible={true}
                     />
+                    </div>
                 }
                 {
                     data.map((d) => {

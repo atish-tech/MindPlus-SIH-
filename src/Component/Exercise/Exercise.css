@@ -31,7 +31,13 @@
     align-items: center;
     gap: 30px;
 }
-
+.loading-con{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Phone Viewport */
 @media screen and (max-width : 700px) {
