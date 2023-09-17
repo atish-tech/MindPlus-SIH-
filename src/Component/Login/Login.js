@@ -96,14 +96,14 @@ const Login = ({ notification }) => {
             <div className='login-con-main'>
                 { // Sign Up
                     seeLogin && (
-                        <div className='login-container shadow-blue-gray-800 px-4 bg-blue-gray-300'>
+                        <div className='login-container shadow-blue-gray-800 px-4 '>
                             <div className='login-image'>
                                 <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
                             </div>
-                            <div style={{ backgroundColor: "#fff" }} className='login-input-container '>
+                            <div style={{ backgroundColor: "rgb(162, 149, 173)" }} className='login-input-container '>
                                 <div className='login-input-item'>
                                     <div>
-                                        <h1 className='text-blue-gray-500' >Create your Account</h1>
+                                        <h1 className='text-white' >Create your Account</h1>
                                     </div>
                                     <TextField className='' name='name' onChange={onChangeHandler} value={data.name} size='large' id="standard-basic" label="User Id" variant="outlined" />
                                     <TextField className='' name='email' onChange={onChangeHandler} value={data.email} size='large' id="standard-basic" label="Email" variant="outlined" />
@@ -132,14 +132,14 @@ const Login = ({ notification }) => {
 
                 { // Login
                     !seeLogin && (
-                        <div className='login-container shadow-blue-gray-800 px-4 bg-blue-gray-300'>
+                        <div className='login-container shadow-blue-gray-800 px-4 '>
                             <div className='login-image'>
                                 <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
                             </div>
-                            <div style={{ backgroundColor: "#fff" }} className='login-input-container '>
+                            <div style={{ backgroundColor: "rgb(162, 149, 173)" }} className='login-input-container '>
                                 <div className='login-input-item'>
                                     <div>
-                                        <h1 className='text-blue-gray-500'>Login To your Account</h1>
+                                        <h1 className='text-white'>Login To your Account</h1>
                                     </div>
                                     <TextField name='name' onChange={onChangeHandler} size='large' id="standard-basic" label="User Id" variant="outlined" />
                                     <TextField name='password' onChange={onChangeHandler} size='large' id="standard-basic" type='password' label="Password" variant="outlined" />
