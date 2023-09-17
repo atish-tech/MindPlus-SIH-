@@ -1,9 +1,11 @@
 .mental-score-component{
-    /* margin-top: 200px; */
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    /* align-items: ; */
     gap: 30px;  
     margin-bottom: 100px;
 }

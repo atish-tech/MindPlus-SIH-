@@ -21,7 +21,7 @@ export default function MentalScore({score}) {
         onClick={handleClose}
       >
         <div>
-            <h1>Your Mental Score is {score}/40</h1>
+            <h1>Your Mental Score is {score}</h1>
         </div>
       </Backdrop>
     </div>

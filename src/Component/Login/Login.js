@@ -19,7 +19,7 @@ const Login = ({ notification }) => {
     const alert = localStorage.getItem('notification');
     useEffect(() => {
         notify("You need login to access the page");
-        notify("only you can access Home pege without page")
+        // notify("only you can access Home pege without page")
     }, [alert])
 
     // login
