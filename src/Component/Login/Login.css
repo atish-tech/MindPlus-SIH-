@@ -2,7 +2,7 @@
 
 /* Login */
 .login-container {
-   margin-top: 50px;
+   /* margin-top: 50px; */
    margin-bottom: 50px;
    height: 80vh;
    width: 80vw;
@@ -13,11 +13,10 @@
 }
 
 .login-con-main{
-   /* margin-top: 110px; */
    display: flex;
    align-items: center;
    justify-content: center;
-
+   height: 100vh;
 }
 .login-image {
    flex: 0.3;
