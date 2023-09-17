@@ -19,7 +19,7 @@ const Login = ({ notification }) => {
     const alert = localStorage.getItem('notification');
     useEffect(() => {
         notify("You need login to access the page");
-        notify("only you can access Home pege without login")
+        notify("only you can access Home pege without page")
     }, [alert])
 
     // login
@@ -45,13 +45,15 @@ const Login = ({ notification }) => {
             const response = await axios.post("https://mind-plus-sih-git-backend-atish-tech.vercel.app/user/login",
                 temp, config);
             localStorage.setItem("userData", JSON.stringify(response));
+            localStorage.setItem('data' , JSON.stringify(data));
             localStorage.setItem("login", true);
+            localStorage.setItem("logout", false);
             console.log((localStorage.getItem("userData")));
             navigater("home");
         }
         catch (e) {
             // console.log(e);
-            notify("error occe")
+            notify("error occer")
         }
         setLoader(false)
     }
@@ -77,6 +79,7 @@ const Login = ({ notification }) => {
             );
             localStorage.setItem("userData", JSON.stringify(response));
             localStorage.setItem("login", true);
+            localStorage.setItem("logout", false);
             navigater("home");
 
         }
@@ -93,7 +96,7 @@ const Login = ({ notification }) => {
             <div className='login-con-main'>
                 { // Sign Up
                     seeLogin && (
-                        <div style={{ backgroundColor: "" }} className='login-container shadow-blue-gray-800 px-4 bg-blue-gray-300'>
+                        <div className='login-container shadow-blue-gray-800 px-4 bg-blue-gray-300'>
                             <div className='login-image'>
                                 <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
                             </div>
@@ -129,11 +132,11 @@ const Login = ({ notification }) => {
 
                 { // Login
                     !seeLogin && (
-                        <div style={{ backgroundColor: "#0F2C59" }} className='login-container shadow-blue-gray-800 px-4'>
+                        <div className='login-container shadow-blue-gray-800 px-4 bg-blue-gray-300'>
                             <div className='login-image'>
                                 <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
                             </div>
-                            <div style={{ backgroundColor: "#213555" }} className='login-input-container '>
+                            <div style={{ backgroundColor: "#fff" }} className='login-input-container '>
                                 <div className='login-input-item'>
                                     <div>
                                         <h1 className='text-blue-gray-500'>Login To your Account</h1>

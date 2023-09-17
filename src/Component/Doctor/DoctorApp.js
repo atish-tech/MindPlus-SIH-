@@ -2,8 +2,11 @@ import React from 'react'
 import "./Doctor.css"
 // import Footer from "../Footer/Footer"
 import DoctorCart from './DoctorCart'
+import { Navigation } from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const DoctorApp = () => {
+  
   const doctorData = [{
     name: 'Dr. John Smith',
     domain: 'www.drjohnsmith.com',
@@ -213,11 +216,12 @@ const DoctorApp = () => {
 ]
   return (
     <>
+    <Navigation />
     <div className='doctor-component'>
     {doctorData.map((d) => {
-      return(<DoctorCart key={d.contact} data={d} /> )
+      return(<DoctorCart key={Date.now()} data={d} /> )
     })}
-    {/* <Footer /> */}
+    <Footer />
     </div>
     </>
   )

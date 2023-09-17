@@ -70,7 +70,21 @@ background-color: #4F709C;
 .white{
     color: aliceblue;
 }
-.navigation-link:active{
+.navigation-link::active{
     background-color: rgb(6, 24, 40);
     color: red;
+}
+.active-link{
+    /* background-color: aliceblue; */
+    /* padding: 300px; */
+}
+
+.navigation-content .active{
+    background-color: #1d6b8a;
+    border-radius: 30px;
+    
+}
+
+.navigation-content .active .icon {
+    color: #022636;
 }

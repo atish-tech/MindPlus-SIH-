@@ -2,35 +2,49 @@ import React from 'react'
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import { IconButton } from '@mui/material';
 import RunCircleIcon from '@mui/icons-material/RunCircle';
-import { useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 const PhoneNavigation = () => {
     const navigater = useNavigate();
     return (
-        <div style={{paddingRight: "20px"}} className='navigation-component-phone'>
-            <div onClick={() => {navigater('home')}} className='logo'>
-            <img style={{borderRadius: "30px"}} width={80} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
-            </div>
+        // Main Navigation
+        <div style={{ paddingRight: "20px" }} className='navigation-component-phone'>
+            {/* Navigation logo */}
+            <NavLink to="/home" className='logo'>
+                <img style={{ borderRadius: "30px" }} width={80} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
+            </NavLink>
+
+            {/* Navigation Item */}
             <div className='navigation-content'>
+                <NavLink to="/exercise" >
+                    <IconButton className='navigation-button'>
+                        <RunCircleIcon className='icon text-gray-400' />
+                        <p className='icon navigation-text text-gray-400'>Exercise</p>
+                    </IconButton>
+                </NavLink>
 
-            <a className='navigation-link'>
-                <IconButton onClick={() => {navigater("exercise")}} className='navigation-button'>
-                    <RunCircleIcon className='text-gray-400' />
-                    <p className='navigation-text text-gray-400'>Exercise</p>
-                </IconButton>
-                </a>
-                <IconButton onClick={() => {navigater("doctor")}} className='navigation-button' >
-                    <LocalHospitalIcon className='text-gray-400' />
-                    <p className='navigation-text text-gray-400'>Doctor</p>
+                <NavLink to="/doctor">
+                    <IconButton className='navigation-button' >
+                        <LocalHospitalIcon className='icon text-gray-400' />
+                        <p className='navigation-text icon text-gray-400'>Doctor</p>
+                    </IconButton>
+                </NavLink>
 
-                </IconButton>
-                <IconButton onClick={() => {navigater('score')}} className='navigation-button' >
-                    <PsychologyAltIcon className='text-gray-400'  />
-                    <p className='navigation-text text-gray-400'> Score</p>
-
-                </IconButton>
+                <NavLink to="/score">
+                    <IconButton className='navigation-button' >
+                        <PsychologyAltIcon className='icon text-gray-400' />
+                        <p className='navigation-text icon text-gray-400'> Score</p>
+                    </IconButton>
+                </NavLink>
+                <NavLink to="/account">
+                    <IconButton className='navigation-button' >
+                        <PersonIcon className='icon text-gray-400' />
+                        <p className='navigation-text icon text-gray-400'> Account</p>
+                    </IconButton>
+                </NavLink>
 
 
             </div>

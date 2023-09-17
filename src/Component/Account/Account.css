@@ -1,0 +1,22 @@
+.account-component{
+    align-items: center;
+    margin: 50px;
+}
+.icon-avtar {
+    padding: 25px 30px;
+    background-color: #156788;
+    border-radius: 100%;
+    color: rgb(241, 245, 245);
+}
+.account-detail{
+    /* display: flex; */
+    gap: 30px;
+}
+.account{
+    background-color: #4c7b8e;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
