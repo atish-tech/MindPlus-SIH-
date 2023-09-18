@@ -4,6 +4,7 @@ import "./Doctor.css"
 import DoctorCart from './DoctorCart'
 import { Navigation } from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
+import Skeleton from '@mui/material/Skeleton';
 
 const DoctorApp = () => {
   
@@ -217,6 +218,7 @@ const DoctorApp = () => {
   return (
     <>
     <Navigation />
+    {/* <Skeleton sx={{ height: 190 }} animation="wave" variant="rectangular" /> */}
     <div className='doctor-component'>
     {doctorData.map((d) => {
       return(<DoctorCart key={Date.now()} data={d} /> )

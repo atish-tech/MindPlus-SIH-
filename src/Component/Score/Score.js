@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Score.css"
 import MentalScore from "./MentalScore";
+import { ScoreItem } from "./ScoreItem";
 
 const data1 = [
   { id: 1, question: "1.)How have you been feeling lately?", ans: ["a).Great", " b) Okay ", "c) Not so good", "d) Terrible"] },
@@ -93,8 +94,25 @@ const ocd_questions = [
 ];
 const Score = () => {
   const [score, setScore] = useState(0);
+  // const [result , setResult] = useState(false);
+
   const updateScore = (e) => {
     setScore(score + parseInt(e.target.value))
+  }
+
+  const alertFun = () => {
+    if(score > 0 && score <= 10) {
+      alert("You need to consult a physician");
+    }
+    if(score > 10 && score <= 20) {
+      alert("Your mental health is at moderate Level");
+    }
+    if(score > 20 && score <= 30) {
+      alert("Great! You just need to work on yourself");
+    }
+    if(score > 30 && score <=40) {
+      alert("Execellent! Your mental health is great");
+    }
   }
   return (
     <>
@@ -102,6 +120,7 @@ const Score = () => {
       <div className="mental-score-component">
         <h1 className="text-4xl text-pink-900">Depression Questions</h1>
         {/* Dipression */}
+        {/* <ScoreItem data={data1} updateScore={updateScore} /> */}
         {
           data1.map(d => {
             return (
@@ -123,7 +142,6 @@ const Score = () => {
             )
           })
         }
-
 
         {/* Anxiety Disorder */}
         <h1 className="text-4xl text-pink-900 mt-14">Anxiety Disorder</h1>
@@ -198,7 +216,7 @@ const Score = () => {
           })
         }
 
-        <button className="bg-blue-gray-100 px-10 py-5 rounded-xl mt-5"> <MentalScore score={score} /> </button>
+        <button onClick={alertFun} className="bg-blue-gray-100 px-10 py-5 rounded-xl mt-5"> <MentalScore score={score} /> </button>
       </div>
     </>
   );
