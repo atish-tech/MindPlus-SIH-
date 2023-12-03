@@ -5,13 +5,14 @@ import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import RunCircleIcon from '@mui/icons-material/RunCircle';
 import {NavLink, useNavigate } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
+import { logoLocation } from '../../Utils/assect.cdn';
 
 export const DesktopNavigation = () => {
     const navigater = useNavigate();
     return (
         <div className='navigation-component'>
             <NavLink to='/home' className='logo'>
-                <img style={{ borderRadius: "30px" }} width={100} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
+                <img style={{ borderRadius: "30px" }} width={100} src={logoLocation} />
             </NavLink>
             <div className='navigation-content'>
 

@@ -4,8 +4,10 @@ import { apiData } from './ApiData';
 export const Exercise = () => {
     const API = apiData;
     console.log(API);
+
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         fetch("https://yoga-api-nzy4.onrender.com/v1/categories")
             .then(response => response.json())
@@ -16,8 +18,6 @@ export const Exercise = () => {
             });
         setData(apiData)
     }, []);
-
-
 
     return (
         <>

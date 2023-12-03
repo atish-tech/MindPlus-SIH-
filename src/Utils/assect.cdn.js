@@ -1,0 +1,2 @@
+// export const logoLocation = "https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png";
+export const logoLocation = "https://w7.pngwing.com/pngs/363/476/png-transparent-mental-disorder-mental-health-health-care-health-psychology-silhouette-medical-care.png";

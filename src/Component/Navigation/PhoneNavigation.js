@@ -5,6 +5,7 @@ import RunCircleIcon from '@mui/icons-material/RunCircle';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import PersonIcon from '@mui/icons-material/Person';
+import { logoLocation } from '../../Utils/assect.cdn';
 
 
 const PhoneNavigation = () => {
@@ -14,7 +15,7 @@ const PhoneNavigation = () => {
         <div style={{ paddingRight: "20px" }} className='navigation-component-phone'>
             {/* Navigation logo */}
             <NavLink to="/home" className='logo'>
-                <img style={{ borderRadius: "30px" }} width={80} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
+                <img style={{ borderRadius: "30px" }} width={80} src={logoLocation} />
             </NavLink>
 
             {/* Navigation Item */}

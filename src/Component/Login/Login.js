@@ -6,16 +6,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./Login.css"
 import { Circles } from 'react-loader-spinner';
+import { logoLocation } from '../../Utils/assect.cdn';
 
 const Login = ({ notification }) => {
     const notify = (p) => toast(p);
     const navigater = useNavigate()
     const [seeLogin, setSeeLogin] = useState(true);
     const [data, setData] = useState({ name: "", email: "", password: "" });
-    const [loader, setLoader] = useState(false)
+    const [loader, setLoader] = useState(false);
+
     const onChangeHandler = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
     }
+
     const alert = localStorage.getItem('notification');
     useEffect(() => {
         notify("You need login to access the page");
@@ -98,7 +101,7 @@ const Login = ({ notification }) => {
                     seeLogin && (
                         <div className='login-container shadow-blue-gray-800 px-4 '>
                             <div className='login-image'>
-                                <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
+                                <img style={{ borderRadius: "30px" }} width={300} src={logoLocation} />
                             </div>
                             <div style={{ backgroundColor: "rgb(162, 149, 173)" }} className='login-input-container '>
                                 <div className='login-input-item'>
@@ -134,7 +137,7 @@ const Login = ({ notification }) => {
                     !seeLogin && (
                         <div className='login-container shadow-blue-gray-800 px-4 '>
                             <div className='login-image'>
-                                <img style={{ borderRadius: "30px" }} width={300} src='https://i.ibb.co/WsvT0LY/Screenshot-2023-09-14-122032-removebg-preview.png' />
+                                <img style={{ borderRadius: "30px" }} width={300} src={logoLocation} />
                             </div>
                             <div style={{ backgroundColor: "rgb(162, 149, 173)" }} className='login-input-container '>
                                 <div className='login-input-item'>
